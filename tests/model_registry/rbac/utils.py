@@ -2,10 +2,8 @@ from typing import Any, Dict, Generator, List
 
 from kubernetes.dynamic import DynamicClient
 from semver.version import Version
-from timeout_sampler import TimeoutSampler
 
 from ocp_resources.authentication_config_openshift_io import Authentication
-from ocp_resources.deployment import Deployment
 from ocp_resources.role import Role
 from ocp_resources.role_binding import RoleBinding
 from ocp_utilities.cluster_versions import get_cluster_version
